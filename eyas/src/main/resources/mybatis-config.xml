@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "/xsd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<!-- changes from the defaults for testing -->
+		<setting name="cacheEnabled" value="false" />
+		<setting name="useGeneratedKeys" value="true" />
+		<setting name="defaultExecutorType" value="REUSE" />
+	</settings>
+
+	<typeAliases>
+		 <!--定义 规范：alias 用全名 -->
+		  <typeAlias type="com.hdsx.framework.module.demo.bean.Emp" alias="Emp"/>
+	</typeAliases>
+
+</configuration>
