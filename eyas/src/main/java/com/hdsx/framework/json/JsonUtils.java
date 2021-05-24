@@ -26,6 +26,7 @@ public class JsonUtils {
 			WriteNullBooleanAsFalse–Boolean字段如果为null,输出为false,而非null
 			*/
 		SerializerFeature[] features = {SerializerFeature.QuoteFieldNames,SerializerFeature.WriteNullNumberAsZero, SerializerFeature.WriteNullStringAsEmpty, SerializerFeature.DisableCircularReferenceDetect};  
+		logger.info("转换json成功！");
 		return JSONObject.toJSONString(bean,features);
 	}
 	public static void write(Object bean,Writer writer) throws Exception{

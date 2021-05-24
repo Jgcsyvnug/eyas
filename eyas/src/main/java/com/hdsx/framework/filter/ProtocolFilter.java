@@ -22,8 +22,6 @@ public class ProtocolFilter implements Filter {
 	
 	public static final int DATA_FORMAT_TYPE_XML=2;
 	
-	private int dataFormatType=DATA_FORMAT_TYPE_JSON;
-	
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 		// TODO Auto-generated method stub
