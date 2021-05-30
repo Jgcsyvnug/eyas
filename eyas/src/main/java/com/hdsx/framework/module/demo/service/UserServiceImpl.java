@@ -7,23 +7,18 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.hdsx.framework.module.demo.bean.Emp;
-import com.hdsx.framework.module.demo.mapper.EmpMapper;
+import com.hdsx.framework.module.demo.bean.User;
+import com.hdsx.framework.module.demo.mapper.UserMapper;
 @Service
 @Transactional
-public class EmpServiceImpl implements EmpService {
+public class UserServiceImpl implements UserService {
 
 	@Resource
-	private EmpMapper mapper;
+	private UserMapper mapper;
 	@Override
-	public List<Emp> selectList() {
+	public List<User> selectList() {
 		// TODO Auto-generated method stub
 		return mapper.selectList();
-	}
-	@Override
-	public boolean insert(Emp emp) {
-		// TODO Auto-generated method stub
-		return mapper.insert(emp)>0;
 	}
 
 }

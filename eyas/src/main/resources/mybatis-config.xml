@@ -10,7 +10,7 @@
 
 	<typeAliases>
 		 <!--定义 规范：alias 用全名 -->
-		  <typeAlias type="com.hdsx.framework.module.demo.bean.Emp" alias="Emp"/>
+		  <typeAlias type="com.hdsx.framework.module.demo.bean.User" alias="User"/>
 	</typeAliases>
 
 </configuration>
