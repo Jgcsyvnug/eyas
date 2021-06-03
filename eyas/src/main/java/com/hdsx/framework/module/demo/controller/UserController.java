@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import com.hdsx.framework.json.JsonUtils;
 import com.hdsx.framework.module.demo.bean.User;
 import com.hdsx.framework.module.demo.service.UserService;
+import com.hdsx.framework.util.ResponseMessage;
 
 @Controller
 @RequestMapping(value="user")
@@ -31,7 +32,8 @@ public class UserController {
 		try 
 		{
 			List<User> users=userService.selectList();
-			JsonUtils.write(users, response.getWriter());
+			ResponseMessage message=new ResponseMessage(users);
+			JsonUtils.write(message, response.getWriter());
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
