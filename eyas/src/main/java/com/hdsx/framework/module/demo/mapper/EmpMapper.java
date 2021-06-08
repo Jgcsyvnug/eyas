@@ -3,11 +3,12 @@ package com.hdsx.framework.module.demo.mapper;
 import java.util.List;
 
 import com.hdsx.framework.dao.Mapper;
-import com.hdsx.framework.module.demo.bean.User;
+import com.hdsx.framework.module.demo.bean.Emp;
 
 @Mapper
-public interface UserMapper {
+public interface EmpMapper {
 	
-	List<User> selectList();
+	List<Emp> selectList();
 	
+	int insert(Emp emp);
 }

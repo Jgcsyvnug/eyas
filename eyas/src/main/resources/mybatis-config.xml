@@ -10,7 +10,13 @@
 
 	<typeAliases>
 		 <!--定义 规范：alias 用全名 -->
-		  <typeAlias type="com.hdsx.framework.module.demo.bean.User" alias="User"/>
+		  <typeAlias type="com.hdsx.framework.module.demo.bean.Emp" alias="Emp"/>
+		  <typeAlias type="com.hdsx.framework.author.bean.DistCode" alias="distcode"/>
+		  <typeAlias type="com.hdsx.framework.author.bean.Dept" alias="dept"/>
+		  <typeAlias type="com.hdsx.framework.author.bean.User" alias="user"/>
+		  <typeAlias type="com.hdsx.framework.author.bean.Layer" alias="layer"/>
+		  <typeAlias type="com.hdsx.framework.author.bean.Role" alias="role"/>
+		  <typeAlias type="com.hdsx.framework.author.bean.Resource" alias="resource"/>
 	</typeAliases>
 
 </configuration>
