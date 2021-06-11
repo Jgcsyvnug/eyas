@@ -2,8 +2,6 @@ package com.hdsx.framework.json;
 
 import java.io.Writer;
 
-import javax.servlet.ServletResponse;
-
 import com.alibaba.druid.support.logging.Log;
 import com.alibaba.druid.support.logging.LogFactory;
 import com.alibaba.fastjson.JSON;
@@ -37,9 +35,5 @@ public class JsonUtils {
 	}
 	public static void json2Bean(String input,Class<?> cla){
 		JSON.parseObject(input, cla);
-	}
-	public static void write(Object bean,ServletResponse response) throws Exception{
-		String jsonStr=bean2Json(bean);
-		response.getWriter().write(jsonStr);
 	}
 }
